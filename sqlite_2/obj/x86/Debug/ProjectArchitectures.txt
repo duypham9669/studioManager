@@ -1,0 +1,1 @@
+D:\FPTSEM3\sqlite_2\sqlite_2\sqlite_2.csproj;x86

@@ -1,0 +1,50 @@
+﻿<Page
+    x:Class="sqlite_2.listAll"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:sqlite_2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <StackPanel
+        
+        Orientation="Vertical"
+        Background="White"
+        >
+        <TextBlock
+            TextAlignment="Center"
+            Foreground="Black"
+            FontSize="40"
+            >
+            List Student (active)
+        </TextBlock>
+        <ScrollViewer>
+            <ListView
+                Background="Gray"
+                Foreground="Black"
+            Width="600"
+            x:Name="listStudent2"
+            >
+            </ListView>
+        </ScrollViewer>
+        
+        <HyperlinkButton
+            x:Name="btn_add" Click="btn_add_Click"
+            >
+            Add student
+        </HyperlinkButton>
+        <HyperlinkButton
+            x:Name="btn_xoa" Click="btn_delete"
+            >
+            delete student
+        </HyperlinkButton>
+        <Button
+            Foreground="Black" Click="Button_Click"
+            >list student has delete</Button>
+        <Button
+            Foreground="Black" Click="Button_Click_nomal"
+            >list student nomal</Button>
+    </StackPanel>
+</Page>
+
